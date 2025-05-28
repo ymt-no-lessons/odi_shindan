@@ -5,7 +5,8 @@ body {
   color: #333;
 }
 .container {
-  max-width: 90%;
+  max-width: 640px;
+  width: 90%;
   margin: auto;
   padding: 20px;
   background: white;
@@ -29,7 +30,7 @@ progress {
   /* -webkit-appearance: none; プログレスバーのスタイルをリセット */
   /*-moz-appearance: none;  プログレスバーのスタイルをリセット */
   background-color: #fff; /* プログレスバーの背景色/-moz- 用 */
-  width: 90%;
+  width: 80%;
   height: 20px;
   background-color: #40c2c4;
 }
