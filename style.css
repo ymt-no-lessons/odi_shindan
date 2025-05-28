@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+h1, h2 {
+  text-align: center;
+}
+#options label {
+  display: block;
+  margin: 8px 0;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+progress {
+  /* -webkit-appearance: none; プログレスバーのスタイルをリセット */
+  /*-moz-appearance: none;  プログレスバーのスタイルをリセット */
+  background-color: #fff; /* プログレスバーの背景色/-moz- 用 */
+  width: 90%;
+  height: 20px;
+  background-color: #40c2c4;
+}
+::-webkit-progress-bar {
+  background-color: #e0e0e0; /* プログレスバーの背景色/-webkit- 用 */
+}
+::-webkit-progress-value {
+  background-color: #40c2c4; /* プログレスバーの進捗部分色/-webkit- 用 */
+  width: 90%;
+  height: 20px;
+  
+}
+::-moz-progress-bar {
+  background-color: #40c2c4; /* プログレスバーの進捗部分色/-moz- 用 */
+  width: 100%;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+button {
+  margin:5px 0;
+  padding: 8px 1em;
+  font-size: 14px;
+  border: none;
+  background: #40c2c4;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+button:hover {
+  background: #a2f9fa;
+}
+
+.radio-group {
+  justify-content: space-between;
+  margin-top: 1em;
+  text-align: center;
+}
+.radio-label {
+  display: inline-block;
+  text-align: center;
+  background: #e3fabb;
+  width:11rem;
+  padding: 0.5em;
+  margin: 0 0.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.radio-label:hover {
+  background: #ffe0dd;
+
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .radio-label {
+  background: #40c2c4;
+  color: white;
+}
