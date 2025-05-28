@@ -110,7 +110,7 @@ input[type="radio"]:checked + .radio-label {
   font-weight: bold;
   font-size: 1.4em;
   color: #40c2c4;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 
@@ -126,4 +126,6 @@ input[type="radio"]:checked + .radio-label {
 .button-link:hover {
   background-color: #c6bf99;
 }
+
+
 
