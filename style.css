@@ -93,3 +93,36 @@ input[type="radio"]:checked + .radio-label {
   background: #40c2c4;
   color: white;
 }
+
+/* 概要ページのスタイルの追加 */
+
+.contents{
+  padding:1em;
+}
+.contents li {
+  list-style: none;
+}
+
+.contents strong {
+  font-family: monospace;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #40c2c4;
+  padding: 0 20px;
+}
+
+
+.button-link {
+  margin:40px 20px;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: #bda83c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.button-link:hover {
+  background-color: #c6bf99;
+}
+

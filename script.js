@@ -138,7 +138,7 @@ function showResult() {
         window.myRadarChart = new Chart(ctx, {
             type: 'radar',
             data: {
-                labels: ["依存度", "倹約度", "支配度", "偏見度"], // 質問とスコアの順序に合わせて調整
+                labels: ["依存おぢ", "浪費おぢ", "支配のおぢ", "勘違いおぢ"], // 質問とスコアの順序に合わせて調整
                 datasets: [{
                     label: "あなたのスコア",
                     data: [score.dependence, score.frugal, score.control, score.bias], // 順序をlabelsと合わせる
