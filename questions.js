@@ -10,7 +10,6 @@ const questions = [
     text: "相手の年齢に関係なく、敬意は大事",
     effects: { "bias": 0.5 }
   },
-
   {
     "id": 3,
     text: "相手のSNSのアイコンが変わったり投稿したらすぐ気づく",

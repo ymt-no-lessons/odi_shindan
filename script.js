@@ -127,6 +127,11 @@ function showResult() {
     document.getElementById("question-box").style.display = "none";
     document.querySelector(".controls").style.display = "none";
 
+    // 画像の表示
+    const imageElement = document.getElementById("result-image");
+    imageElement.src = `assets/${type}.png`;
+    imageElement.alt = `${desc.name}のイラスト`;
+
     // Chart.js
     const ctx = document.getElementById('resultChart');
     if (ctx) {
