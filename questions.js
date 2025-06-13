@@ -1,134 +1,136 @@
 const questions = [
-   
-   {
-    "id": 1,
-    text:" 実年齢より若く見られると嬉しくなってしまう",
-    effects: { "bias": 1, "dependence": 0.25 }
-  },
+  // 💌 恋愛・依存系
   {
-    "id": 2,
-    text: "相手の年齢に関係なく、敬意は大事",
-    effects: { "bias": 0.5 }
+    id: 1,
+    text: "既読がついたのに返信がないと、脳内で100通りのシナリオが再生される",
+    effects: { dependence: 2 }
+  },
+  
+  {
+    id: 2,
+    text: "1人飯・1人旅・1人ゲーム、だいたい全部ソロでイケる",
+    effects: { independence: 2 }
   },
 
+  // 💸 金銭・搾取耐性
   {
-    "id": 3,
-    text: "相手のSNSのアイコンが変わったり投稿したらすぐ気づく",
-    effects: { "dependence": 1.25}
+    id: 3,
+    text: "“これは推し活！”と思えば財布が自動で開く",
+    effects: { spendthrift: 2 }
   },
   {
-    "id": 4,
-    text: "連絡はお互いのペースでよく、既読無視も気にしない",
-    effects: { "dependence": -1.5 }
+    id: 4,
+    text: "レシートは即チェック、¥1の誤差も見逃さない",
+    effects: { frugal: 2 }
+  },
+
+  // 👑 支配・対等
+  {
+    id: 5,
+    text: "『自由にしていいよ』と言いつつ、心の中でGPSを起動してる",
+    effects: { control: 2 }
+  },
+
+  /*
+  {
+    id: 6,
+    text: "対等な関係じゃないと、息が詰まるし疲れる",
+    effects: { equality: 2 }
+  },
+
+  // 🧠 思い込み・客観性
+  {
+    id: 7,
+    text: "初対面5秒で『あ、コイツ無理』と決めがち",
+    effects: { bias: 2 }
   },
   {
-    "id": 5,
-    text: "ご飯をごちそうしたら『ありがとう』と言ってほしい",
-    effects: { "frugal": 1, "control": 0.75 }
+    id: 8,
+    text: "自分の感情は一回冷蔵庫に入れてから確認する派",
+    effects: { objectivity: 2 }
+  },
+
+  // 💣 執着・暴走予備軍
+  {
+    id: 9,
+    text: "好きになったら、通知音が鳴るだけで心臓が走り出す",
+    effects: { dependence: 1.5, control: 1 }
   },
   {
-    "id": 6,
-    text: "プレゼントしたりおごったりすると相手は嬉しいだろうと思う",
-    effects: { "frugal": -1.5, "control": 0.5 }
+    id: 10,
+    text: "相手が返信くれないと、自分が悪いのかと反省会を開催してしまう",
+    effects: { bias: 1.5 }
+  },
+
+  // 🪤 騙されやすさ
+  {
+    id: 11,
+    text: "好きだよと言われるとプレゼントあげたりやごちそうしたくなる",
+    effects: { spendthrift: 1.5, dependence: 1, bias: 1 }
   },
   {
-    "id": 7,
-    text: "話を最後まで聞けずに途中で遮ったり割り込みがちだ",
-    effects: { "control": 1.25 }
+    id: 12,
+    text: "脳内BGMがラブソングになる",
+    effects: { bias: 2 }
+  },
+
+  // 🧊 騙されにくさ
+  {
+    id: 13,
+    text: "褒められたら“何か企んでる？”と思う",
+    effects: { objectivity: 2 }
+  },
+
+  // 🧘‍♀️ 自己肯定感
+  {
+    id: 14,
+    text: "誰が何と言おうと、自分は自分、人は人",
+    effects: { independence: 2, objectivity: 1 }
+  },
+
+  // 💬 情動系
+  {
+    id: 15,
+    text: "既読無視されると3時間スマホを見つめる修行に入る",
+    effects: { dependence: 1.5, bias: 1 }
+  },
+
+  // 🎁 見返り期待
+  {
+    id: 16,
+    text: "プレゼントして無言だったら、なんで？って思う",
+    effects: { control: 1.5, bias: 1 }
+  },
+
+  // 🐶 動物と過ごしたい
+  {
+    id: 17,
+    text: "正直、人間より猫や犬と分かり合える気がしてる",
+    effects: { independence: 1.5, objectivity: 1.5 }
+  },
+
+  // 😎 主導権
+  {
+    id: 18,
+    text: "采配は基本自分が握りたい",
+    effects: { control: 2 }
   },
   {
-    "id": 8,
-    text: "相手の話す内容がどうであれ、まず肯定から入るようにしている",
-    effects: { "control": -1 }
+    id: 19,
+    text: "沼る前に“この人ヤバくないか”のセンサーが作動する",
+    effects: { objectivity: 2, frugal: 1 }
   },
+
+  // 🔄 中立調整
   {
-    "id": 9,
-    text: "相手のことは理解できていると思う",
-    effects: { "bias": 0.75, "control": 0.5 }
-  },
-  {
-    "id": 10,
-    text: "年齢や立場に関係なく対等なのが一番だよねッ",
-    effects: { "control": -1 }
-  },
-  {
-    "id": 11,
-    text: "既読スルーされると、気にしないようにしても気になってしまう",
-    effects: { "dependence": 1.5 }
-  },
-  {
-    "id": 12,
-    text: "相手から返事が来なくても『何か理由があるんだな』と気にならない",
-    effects: { "dependence": -1.25 }
-  },
-  {
-    "id": 13,
-    text: "何かしてあげたら、相手から感謝の反応がないとちょっとモヤる",
-    effects: { "control": 1, "frugal": 0.5 }
-  },
-  {
-    "id": 14,
-    text: "よく相手のために「こうしたほうがいいよ」とアドバイスをする",
-    effects: { "control": 1 }
-  },
-  {
-    "id": 15,
-    text: "周りと比べて自分は騙されにくい方だと思う",
-    effects: { "bias": 0.75 }
-  },
-  {
-    "id": 16,
-    text: "言葉よりも相手の行動を見て判断するタイプだ",
-    effects: { "bias": -1 }
-  },
-  {
-    "id": 17,
-    text: "『自由にしていいよ』とは言うけど、ホントは不安でざわざわしがち",
-    effects: { "dependence": 1.5, "control": 0.5 }
-  },
-  {
-    "id": 18,
-    text: "お互いの自由を大事にして、束縛はしないようにしている",
-    effects: { "control": -1.25 }
-  },
-  {
-    "id": 19,
-    text: "好意を持ってると、ついメッセージ多めになってしまう",
-    effects: { "dependence": 1.5, "control": 1 }
-  },
-  {
-    "id": 20,
-    text: "相手との距離感を大切にし、適度な関係を保つようにしている",
-    effects: { "dependence": -1.25, "control": -0.25 }
-  },
-  {
-    "id": 21,
-    text: "自分が関係をリードした方がうまくいくと思う",
-    effects: { "bias": 1, "control": 1 }
-  },
-  {
-    "id": 22,
-    text: "相手が主導してくれる方がラクだと思っちゃう",
-    effects: { "control": -0.25 }
-  },
-  {
-    "id": 23,
-    text: "プレゼントや食事などで相手に気に入られたら嬉しい",
-    effects: { "frugal": -1.5, "dependence": 1 }
-  },
-  {
-    "id": 24,
-    text: "、他人より自分のためにお金を使うべきだと思う",
-    effects: { "frugal":1.5 }
-  },
-  {
-    "id": 25,
-    text: "SNSで相手が何か投稿すると気になってあれこれ考える",
-    effects: { "dependence": 1.5 }
-  },
-  {
-    "id": 26,
-    text: "本当は人よりも犬や猫など動物と過ごしたい",
-    effects: { "bias": -1, "dependence": -1.75 }
+    id: 20,
+    text: "恋愛は、信頼・お金・タイミング、全部大事だよね",
+    effects: {
+      dependence: 0.5, independence: 0.5,
+      spendthrift: 0.5, frugal: 0.5,
+      control: 0.5, equality: 0.5,
+      bias: 0.5, objectivity: 0.5
+    }
   }
+  */
 ]

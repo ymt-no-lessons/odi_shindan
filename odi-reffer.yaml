@@ -1,0 +1,73 @@
+title: おぢ診断テスト
+description: >
+  「頂き女子りりちゃんのマニュアル」をベースに、恋愛における騙されやすさ・依存傾向・支配欲・金銭感覚・思い込みの強さを多面的に診断する心理テスト。
+  ユーモアを交えながらも、自己防衛・ストーカー傾向・恋愛幻想への自覚を促すことを目的とする。
+
+version: 1.0
+
+axes:
+  - name: Dependence vs Independence
+    keys: [D, I]
+    description: 依存性と自立性の傾向を測定
+  - name: Spendthrift vs Frugal
+    keys: [S, F]
+    description: 金銭感覚のルーズさと倹約意識を測定
+  - name: Control vs Equality
+    keys: [C, E]
+    description: 関係性における主導欲と対等意識を測定
+  - name: Bias vs Objectivity
+    keys: [B, O]
+    description: 思い込みの強さとメタ認知・客観性を測定
+
+questions:
+  format: 5-point scale
+  labels:
+    - 全く当てはまらない (-2)
+    - やや当てはまらない (-1)
+    - どちらでもない (0)
+    - やや当てはまる (+1)
+    - 非常に当てはまる (+2)
+  distribution:
+    total: 20
+    structure:
+      - D/I: 5
+      - S/F: 5
+      - C/E: 5
+      - B/O: 5
+
+scoring:
+  method: axis pair comparison
+  logic:
+    - if score[D] >= score[I] → assign D
+    - if score[S] >= score[F] → assign S
+    - if score[C] >= score[E] → assign C
+    - if score[B] >= score[O] → assign B
+  result_type: 4-letter type (e.g. DSCB)
+
+visualization:
+  chart: Radar (Chart.js)
+  dimensions: 8
+  axes:
+    - D, I, S, F, C, E, B, O
+
+output:
+  - type: 4-letter code (DSCB, IFEO etc.)
+  - name/description: from typeDescriptions.js
+  - balanceComment: generated dynamically from axis scores
+  - image: assets/[TYPE].png
+
+files:
+  - index.html
+  - questions.js
+  - typeDescriptions.js
+  - script.js
+  - style.css
+
+extensions:
+  - PDF export
+  - SNS sharing
+  - replay/reset function
+  - future: multiple result patterns, statistical analysis, recommendation engine
+
+license: Proprietary
+author: 診断テストのいろいろ project
