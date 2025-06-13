@@ -31,7 +31,7 @@ const questions = [
     effects: { control: 2 }
   },
 
-  /*
+  
   {
     id: 6,
     text: "対等な関係じゃないと、息が詰まるし疲れる",
@@ -132,5 +132,4 @@ const questions = [
       bias: 0.5, objectivity: 0.5
     }
   }
-  */
 ]
