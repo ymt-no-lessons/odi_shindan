@@ -144,6 +144,4 @@ const questions = [
       bias: 0.5, objectivity: 0.5
     }
   }
-];
-
-export default questions;
+]
