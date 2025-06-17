@@ -81,8 +81,8 @@ progress {
 
 .result-image {
   float:right;
-  width: 40%;
-  max-width: 50%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
