@@ -65,11 +65,11 @@ progress {
   padding:1em;
 }
 .result-box {
-    display: block;
-    padding:1em;
+  display: block;
+  padding:1em;
 }
 .result-discription {
-    float: left;
+  width:100%
 }
 
 #description{
