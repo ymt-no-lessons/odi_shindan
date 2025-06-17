@@ -1,0 +1,169 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+.container {
+  max-width: 560px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: #266f71;
+}
+h3 {
+  text-align: center;
+  color: #329596;
+}
+#options label {
+  display: block;
+  margin: 8px 0;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 80px;
+}
+progress {
+  /* -webkit-appearance: none; プログレスバーのスタイルをリセット */
+  /*-moz-appearance: none;  プログレスバーのスタイルをリセット */
+  background-color: #fff; /* プログレスバーの背景色/-moz- 用 */
+  width: 80%;
+  height: 20px;
+  background-color: #40c2c4;
+}
+::-webkit-progress-bar {
+  background-color: #e0e0e0; /* プログレスバーの背景色/-webkit- 用 */
+}
+::-webkit-progress-value {
+  background-color: #40c2c4; /* プログレスバーの進捗部分色/-webkit- 用 */
+  width: 80%;
+  height: 20px; 
+}
+::-moz-progress-bar {
+  background-color: #40c2c4; /* プログレスバーの進捗部分色/-moz- 用 */
+  width: 80%;
+  height: 20px;
+}
+
+/*結果に画像を入れる*/
+#result{
+  padding:1em;
+}
+.result-box {
+    display: block;
+    padding:1em;
+}
+.result-discription {
+    float: left;
+}
+
+#description{
+  display: inline-block;
+  width:60%;
+}
+
+.chart-container {
+  width: 100%;
+  height: 500px; /* ← ここでゆったり指定 */
+  position: relative;
+}
+
+.result-image {
+  float:right;
+  width: 40%;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*非表示のとき用*/
+.hidden {
+  display: none;
+}
+button {
+  margin:5px 0;
+  padding: 8px 1.2em;
+  font-size: 14px;
+  border: none;
+  background: #40c2c4;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+button:hover {
+  background: #a2f9fa;
+}
+
+.radio-group {
+  justify-content: space-between;
+  margin-top: 1em;
+  text-align: center;
+}
+.radio-label {
+  display: inline-block;
+  text-align: center;
+  background: #e3fabb;
+  width:11rem;
+  padding: 0.5em;
+  margin: 0 0.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.radio-label:hover {
+  background: #ffe0dd;
+
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .radio-label {
+  background: #40c2c4;
+  color: white;
+}
+
+/* 概要ページのスタイルの追加 */
+.contents{
+  padding:1em;
+}
+.contents ul {
+  list-style: none;
+  padding-inline-start:0px;
+}
+
+.contents strong {
+  font-family: monospace;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #40c2c4;
+  padding: 0 20px 0 0;
+}
+
+.button-link {
+  margin:20px 0 0 0;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: #bda83c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.button-link:hover {
+  background-color: #c6bf99;
+}
+
+
+
