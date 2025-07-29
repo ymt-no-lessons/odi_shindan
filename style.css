@@ -15,6 +15,7 @@ body {
 }
 h1 {
   text-align: center;
+  color: #43a9ab;
 }
 h2 {
   text-align: center;
@@ -57,10 +58,10 @@ progress {
 }
 /*設問のスタイル*/
 #question-text{
-  font-size: 1.2em;
-  color: #329596;
+  font-size: 1.1em;
+  color: #266f71;
   font-weight: bold;
-  padding: 10px;
+  padding: 1em;
 }
 
 /*結果*/
