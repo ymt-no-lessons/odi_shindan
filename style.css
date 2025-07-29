@@ -22,7 +22,7 @@ h2 {
 }
 h3 {
   text-align: center;
-  color: #329596;
+  color: #43a9ab;
 }
 #options label {
   display: block;
@@ -55,11 +55,22 @@ progress {
   width: 80%;
   height: 20px;
 }
+/*設問のスタイル*/
+#question-text{
+  font-size: 1.2em;
+  color: #329596;
+  font-weight: bold;
+  padding: 10px;
+}
 
+/*結果*/
 #type{
   font-size: 1.4em;
   font-weight: bold;
+  text-align: center;
+  color: #43a9ab;
 }
+
 /*結果に画像を入れる*/
 #result{
   padding:1em;
@@ -128,8 +139,8 @@ button:hover {
 }
 .radio-label:hover {
   background: #ffe0dd;
-
 }
+
 input[type="radio"] {
   display: none;
 }
