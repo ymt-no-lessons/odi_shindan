@@ -41,7 +41,7 @@ const questions = [
   },
   {
     "id": 8,
-    text: "自分の意見を否定されると、ついイラッとしてしまう",
+    text: "自分の意見に反対されると、ついイラッとしてしまう",
     effects: { control: 1.5, equality: -1 }
   },
   {
