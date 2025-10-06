@@ -162,8 +162,9 @@ input[type="radio"]:checked + .radio-label {
 }
 .contents ul {
   list-style: none;
-  line-height: 1em;
+  line-height: 1.5em;
   padding-inline-start:0px;
+  font-size: 1.2em;
 }
 
 .contents strong {
