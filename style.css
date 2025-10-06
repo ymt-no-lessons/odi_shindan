@@ -24,6 +24,12 @@ h2 {
 h3 {
   text-align: center;
   color: #43a9ab;
+  font-size: 1.2em;
+}
+h4 {
+  text-align: center;
+  color: #1a4546;
+  font-size: 1.1em;
 }
 #options label {
   display: block;
