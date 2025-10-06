@@ -10,12 +10,12 @@ const questions = [
   {
     "id": 2,
     text: "恋人や好きな人が自分抜きで出かけると、つい気になってしまう",
-    effects: { dependence: 1.5, control: 1 }
+    effects: { dependence: 1.5, control: 0.5 }
   },
   {
     "id": 3,
-    text: "好きな人のSNSで、『いいね』やコメントの相手まで気になってしまう",
-    effects: { dependence: 1.5, bias: 1 }
+    text: "自分のことを好きな人が好きだ！",
+    effects: { dependence: 1.5, bias: 2 }
   },
   {
     "id": 4,
@@ -31,7 +31,7 @@ const questions = [
   // 🧠 思い込み・客観性
   {
     "id": 6,
-    text: "お店やSNSで優しくされたら、“もしかして脈アリ？”と考える",
+    text: "店員さんや同僚、後輩、上司や、SNS上の友人に優しくされたら、『もしかして自分のこと好き？』と考える",
     effects: { bias: 2, dependence: 1 }
   },
   {
@@ -46,12 +46,12 @@ const questions = [
   },
   {
     "id": 9,
-    text: "初対面で「あ、コイツ無理」ってなることがある",
+    text: "初対面で『あ、コイツ無理』ってなることがある",
     effects: { bias: 2 }
   },
   {
     "id": 10,
-    text: "自分があげたプレゼントやお金への『お返し』がないとガッカリする",
+    text: "自分があげたプレゼントや払ったお金への『お返し』がないとガッカリする",
     effects: { control: 1.5, dependence: 1 }
   },
 
@@ -63,13 +63,13 @@ const questions = [
   },
   {
     "id": 12,
-    text: "困ってると言われると、ついお金や物を出してあげたくなる",
+    text: "困ってると言われると、ついお金や物をあげたくなる",
     effects: { spendthrift: 1.5, dependence: 1 }
   },
   {
     "id": 13,
-    text: "“また来てね！”と言われると、本気で自分を待ってる気がしてしまう",
-    effects: { bias: 2, dependence: 1 }
+    text: "『また会いたい！』と言われると、社交辞令かなって思ってしまう",
+    effects: { bias: -1.5, dependence: -1 }
   },
   {
     "id": 14,
@@ -86,7 +86,7 @@ const questions = [
   {
     "id": 16,
     text: "自分の思い通りに相手が動かないと、不安やイライラが増してしまう",
-    effects: { control: 2, dependence: 1 }
+    effects: { control: 2, dependence: 0.5 }
   },
   {
     "id": 17,
@@ -102,30 +102,30 @@ const questions = [
   // 🧊 騙されにくさ・自己肯定感
   {
     "id": 19,
-    text: "褒められたらありがとうと言いつつも「エッ…何か企んでるかも…」と思う",
+    text: "褒められたらありがとうと言いつつも『エッ…何か企んでるかも…』と思う",
     effects: { objectivity: 2 }
   },
   {
     "id": 20,
-    text: "誰が何と言おうと、自分は自分、人は人",
+    text: "自分は自分、人は人。他人の目は気にならない",
     effects: { independence: 2, objectivity: 1 }
   },
   {
     "id": 21,
-    text: "正直、人間より猫や犬といる方が落ち着く",
+    text: "正直、人間より猫や犬など動物といる方が落ち着く",
     effects: { independence: 2, objectivity: 1.5 }
   },
 
   // 🪤 騙されやすさ・見返り
   {
     "id": 22,
-    text: "ラブソングを聴くと「あー自分のことじゃん！」って思いがち",
+    text: "ラブソングを聴くと『あー自分のことじゃん！』って思ったことがある",
     effects: { bias: 2 }
   },
   {
     "id": 23,
-    text: "“自分だけには心を開いてくれてる”と感じると、つい特別扱いしちゃう",
-    effects: { dependence: 1.5, bias: 1.5 }
+    text: "自分だけには心を開いてくれてると感じると、特別扱いしちゃう",
+    effects: { dependence: 1, bias: 1.5 }
   },
   {
     "id": 24,
