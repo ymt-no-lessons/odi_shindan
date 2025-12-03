@@ -27,11 +27,13 @@ h3 {
   text-align: center;
   color: #43a9ab;
   font-size: 1.2em;
+  padding: 5px;
 }
 h4 {
   text-align: center;
   color: #1a4546;
   font-size: 1.1em;
+  padding: 5px;
 }
 
 #summary{
