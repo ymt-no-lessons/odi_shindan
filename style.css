@@ -208,17 +208,20 @@ input[type="radio"]:checked + .radio-label {
 }
 
 .type-label {
-  margin-top: 6px;
   font-weight: bold;
   color: #266f71;
+  margin-top: 6px;
 }
 
-/* スマホでは2列に変更 */
+.type-text {
+  font-size: 0.85em;
+  margin-top: 4px;
+  color: #444;
+  line-height: 1.4em;
+}
+
 @media (max-width: 480px) {
   .type-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
-
