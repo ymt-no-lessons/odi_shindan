@@ -189,5 +189,36 @@ input[type="radio"]:checked + .radio-label {
   background-color: #c6bf99;
 }
 
+/* ▼ overview 4列グリッド用 */
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.type-card {
+  text-align: center;
+}
+
+.type-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.type-label {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #266f71;
+}
+
+/* スマホでは2列に変更 */
+@media (max-width: 480px) {
+  .type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 
