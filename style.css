@@ -33,6 +33,12 @@ h4 {
   color: #1a4546;
   font-size: 1.1em;
 }
+
+.summary{
+  font-size:0.8em;
+  padding:5px;
+}
+
 #options label {
   display: block;
   margin: 8px 0;
