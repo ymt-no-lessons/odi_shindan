@@ -7,8 +7,8 @@ body {
 .container {
   max-width: 560px;
   width: 90%;
-  margin: auto;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 5px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 0 10px #ccc;
